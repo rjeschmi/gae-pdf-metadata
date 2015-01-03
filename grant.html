@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Can Haz Perms?</title>
+  </head>
+  <body>
+    {% if has_credentials %}
+    <p>Thanks for granting us permission. You can try this by going to /pdf/count/<id> .</p>
+    {% endif %}
+    <p><a href="{{ url }}">Grant</a> this application permission to read your
+    Google+ information and it will let you know how many followers you have.</p>
+    <p>You can always <a
+      href="https://www.google.com/accounts/b/0/IssuedAuthSubTokens">revoke</a>
+    permission at any time.</p>
+  </body>
+</html>
